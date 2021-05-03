@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Solid Geometry Processing on Deconstructed Domains</title>
+	<meta name="author" content="Silvia Sellán, Herng Yi Cheng, Yuming Ma, Mitchell Dembowski, Alec Jacobson"/>
+<meta property="og:image" content="http://www.dgp.toronto.edu/projects/overlapping/overlapping-teaser.jpg" />
+<meta property="og:description" content="Many tasks in geometry processing are modelled as variational problems solved numerically using the finite element method. For solid shapes, this requires a volumetric discretization, such as a boundary conforming tetrahedral mesh. Unfortunately, tetrahedral meshing remains an open challenge and existing methods either struggle to conform to complex boundary sur- faces or require manual intervention to prevent failure. Rather than create a single volumetric mesh for the entire shape, we advocate for solid geometry processing on deconstructed domains, where a large and complex shape is composed of overlapping solid subdomains. As each smaller and simpler part is now easier to tetrahedralize, the question becomes how to account for overlaps during problem modelling and how to couple solutions on each subdomain together algebraically. We explore how and why previous coupling methods fail, and propose a method that couples solid domains only along their boundary surfaces. We demonstrate the superiority of this method through empirical convergence tests and qualita- tive applications to solid geometry processing on a variety of popular second-order and fourth-order partial differential equations." />
+<meta name="twitter:card" content="summary"></meta>
+<meta name="og:title" content="Solid Geometry Processing on Deconstructed Domains"></meta>
+	<link type="text/css" rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<h1 id="solidgeometryprocessingondeconstructeddomains:computergraphicsforum">Solid Geometry Processing on Deconstructed Domains <em> Computer Graphics Forum 2019</em></h1>
+<div class=authors>
+<p>SILVIA SELLÁN<sup>1</sup>, HERNG YI CHENG<sup>2</sup>, YUMING MA<sup>3</sup>, MITCHELL DEMBOWSKI<sup>4</sup>, ALEC JACOBSON<sup>3</sup></p><center><p><sup>1</sup>University of Oviedo, <sup>2</sup>Massachusetts Institute of Technology, <sup>3</sup>University of Toronto, <sup>4</sup>Ryerson University</p></center>
+</div>
+
+<figure>
+<img src="solid-geometry-processing-on-deconstructed-domains-teaser.jpg" alt="" />
+<caption>
+  A complex shape is constructed as the union of 32 solid components. Rather than
+resolving the mesh union geometrically and struggling to tetrahedralize the
+result, we propose tetrahedralizing each smaller, simpler model independently.
+We introduce constraints to join the volume meshes algebraically, enabling
+partial differential equation-based geometry processing (<a
+href=https://www.cs.cmu.edu/~kmcrane/Projects/HeatMethod/>heat
+distances</a> shown here).</caption>
+</figure>
+
+
+
+<h2 id="abstract">Abstract</h2>
+
+<p>Many tasks in geometry processing are modelled as variational problems solved
+numerically using the finite element method. For solid shapes, this requires a
+volumetric discretization, such as a boundary conforming tetrahedral mesh.
+Unfortunately, tetrahedral meshing remains an open challenge and existing
+methods either struggle to conform to complex boundary surfaces or require
+manual intervention to prevent failure. Rather than create a single volumetric
+mesh for the entire shape, we advocate for solid geometry processing on
+deconstructed domains, where a large and complex shape is composed of
+overlapping solid subdomains. As each smaller and simpler part is now easier to
+tetrahedralize, the question becomes how to account for overlaps during problem
+modelling and how to couple solutions on each subdomain together algebraically.
+We explore how and why previous coupling methods fail, and propose a method that
+couples solid domains only along their boundary surfaces. We demonstrate the
+superiority of this method through empirical convergence tests and qualitative
+applications to solid geometry processing on a variety of popular second-order
+and fourth-order partial differential equations.</p>
+
+<h2 id="downloads">Downloads</h2>
+
+<ul>
+<li><a href="solid-geometry-processing-on-deconstructed-domains-cgf-2019-sellan-et-al.pdf">Paper</a></li>
+<li><a href="solid-geometry-processing-on-deconstructed-domains-cgf-2019-compressed-sellan-et-al.pdf">Paper (low res)</a></li>
+<li><a href="https://arxiv.org/abs/1807.00866">Arxiv Preprint</a></li>
+<li><a href="https://www.youtube.com/watch?v=yjiHuoxQII8">Presentation</a></li>
+</ul>
+
+<h2 id="bibtex">BibTeX</h2>
+
+<pre><code>@article{Sellan:Overlapping:2019,
+  title = {Solid Geometry Processing on Deconstructed Domains},
+  author = {Silvia Sellán and Herng Yi Cheng and Yuming Ma and Mitchell Dembowski and Alec Jacobson},
+  year = {2019},
+  journal = {Computer Graphics Forum},
+}
+</code></pre>
+
+<h2 id="acknowledgements">Acknowledgements</h2>
+
+<p>
+The first four authors were supported by the 2017 Fields Undergraduate Summer
+Research Program. Silvia Sellán is also funded by the Maria Cristina Masaveu
+Peterson Scholarship for Academic Excellence. We thank: Eitan Grinspun, David
+I.W. Levin, Oded Stein and Héctor Jardón Sánchez for insightful and helpful con-
+versations; Sarah Kushner for presenting our poster at SGP 2018; Darren Moore,
+Gavin Barill, Michael Tao and Sarah Kushner for proofreading; and the TOMOGRAPH
+2017 workshop for hosting an early presentation. This research is funded in part
+by NSERC Discovery (RGPIN2017–05235, RGPAS–2017–507938), Connaught Funds
+(NR2016–17), the Canada Research Chairs Program, the Fields Centre for
+Quantitative Analysis and Modelling and gifts by Adobe Systems, Autodesk and
+MESH Inc.
+</p>
+
+</body>
+</html>
